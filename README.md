@@ -22,7 +22,14 @@ npm run preview  # 预览构建结果
 
 > 口令校验为纯前端实现，仅防止误操作，不适用于公网敏感场景。忘记口令可在浏览器控制台执行 `localStorage.removeItem('site:admin:pass')` 重置。
 
-让修改永久生效：把导出的 4 个文件覆盖到 `src/data/`，再执行 `npm run build` 部署。
+### 一键发布到线上
+
+后台「发布上线」标签页：填写 GitHub Token（需 `repo`、`workflow` 权限），点击**发布到线上**，会自动把当前内容写入仓库 `src/data/` 并触发 GitHub Actions 重新部署（约 1–2 分钟），页面实时显示进度与线上地址。
+
+- 仓库拥有者 / 仓库名 / 分支默认已填好，可修改
+- Token 只在浏览器本地使用，勾选「在本机记住」后存于 localStorage，不会上传到任何服务器
+
+其他方式：导出 4 个文件覆盖 `src/data/` 后执行 `.\deploy.ps1 -RepoUrl ...` 推送，同样会自动部署。
 
 ## 直接修改源文件
 

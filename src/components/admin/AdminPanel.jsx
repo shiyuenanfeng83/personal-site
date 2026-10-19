@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from 'react'
 import { useSite, DEFAULT_PASSCODE } from '../../store/siteStore.jsx'
 import { AboutEditor, ExperienceEditor, ProfileEditor, ProjectsEditor } from './editors.jsx'
+import PublishPanel from './PublishPanel.jsx'
 import { Button, Card, ConfirmButton, TextField } from './fields.jsx'
 
 const TABS = [
@@ -8,6 +9,7 @@ const TABS = [
   { key: 'about', label: '关于我' },
   { key: 'projects', label: '作品集' },
   { key: 'experience', label: '经历' },
+  { key: 'publish', label: '发布上线' },
   { key: 'settings', label: '设置' },
 ]
 
@@ -212,6 +214,7 @@ export default function AdminPanel() {
         {tab === 'experience' && (
           <ExperienceEditor experience={data.experience} onChange={(v, label) => setValue('experience', v, label)} />
         )}
+        {tab === 'publish' && <PublishPanel />}
         {tab === 'settings' && <Settings onLogout={() => setAuthed(false)} />}
       </main>
     </div>

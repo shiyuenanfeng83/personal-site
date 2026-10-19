@@ -101,7 +101,7 @@ export function ConfirmButton({ children, confirmText = '确认删除？', onCon
   )
 }
 
-export function Button({ children, onClick, variant = 'default', type = 'button', ...rest }) {
+export function Button({ children, onClick, variant = 'default', type = 'button', disabled, ...rest }) {
   const styles = {
     default: 'border border-slate-300 hover:border-brand-500 hover:text-brand-500 dark:border-slate-700',
     primary: 'bg-brand-500 text-white hover:bg-brand-600',
@@ -111,7 +111,10 @@ export function Button({ children, onClick, variant = 'default', type = 'button'
     <button
       type={type}
       onClick={onClick}
-      className={`rounded-lg px-3.5 py-2 text-sm font-medium transition ${styles[variant]}`}
+      disabled={disabled}
+      className={`rounded-lg px-3.5 py-2 text-sm font-medium transition ${styles[variant]} ${
+        disabled ? 'cursor-not-allowed opacity-60' : ''
+      }`}
       {...rest}
     >
       {children}
