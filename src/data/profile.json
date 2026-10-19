@@ -1,0 +1,38 @@
+{
+  "name": "张明",
+  "title": "前端工程师 / 交互设计爱好者",
+  "location": "中国 · 杭州",
+  "email": "zhangming@example.com",
+  "avatar": "./avatar.svg",
+  "resumeUrl": "./resume.pdf",
+  "tagline": "我专注于把复杂的业务问题，变成简单、流畅、有质感的产品体验。",
+  "stats": [
+    { "label": "开发经验", "value": "5 年" },
+    { "label": "交付项目", "value": "20+" },
+    { "label": "开源 Star", "value": "1.2k" }
+  ],
+  "skillGroups": [
+    {
+      "name": "前端框架",
+      "skills": ["React", "Vue 3", "Next.js", "TypeScript"]
+    },
+    {
+      "name": "工程化",
+      "skills": ["Vite", "Webpack", "Tailwind CSS", "ESLint"]
+    },
+    {
+      "name": "后端与数据",
+      "skills": ["Node.js", "Express", "MySQL", "Redis"]
+    },
+    {
+      "name": "设计与协作",
+      "skills": ["Figma", "Git", "Docker", "CI/CD"]
+    }
+  ],
+  "socials": [
+    { "label": "GitHub", "url": "https://github.com/", "icon": "github" },
+    { "label": "邮箱", "url": "mailto:zhangming@example.com", "icon": "mail" },
+    { "label": "掘金", "url": "https://juejin.cn/", "icon": "link" },
+    { "label": "微信", "url": "#", "icon": "wechat" }
+  ]
+}

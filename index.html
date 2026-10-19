@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="zh-CN" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>张明 · 个人作品集</title>
+    <meta name="description" content="张明的个人作品集与简历：前端工程、交互设计与项目经历。" />
+    <script>
+      // 提前应用主题，避免刷新时闪白
+      (function () {
+        try {
+          var saved = localStorage.getItem('theme')
+          var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches
+          if (dark) document.documentElement.classList.add('dark')
+        } catch (e) {}
+      })()
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>
