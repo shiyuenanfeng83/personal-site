@@ -26,5 +26,19 @@
     "demo": "https://shiyuenanfeng83.github.io/liuyz-housing-report/",
     "repo": "",
     "featured": false
+  },
+  {
+    "id": "60c924e0-d443-4389-96ba-3e94c7b5568e",
+    "name": "个人介绍编辑网址",
+    "summary": "",
+    "description": "个人信息编辑",
+    "highlights": [],
+    "tech": [],
+    "role": "参与开发",
+    "period": "",
+    "cover": "",
+    "demo": "https://shiyuenanfeng83.github.io/personal-site/#admin/publish",
+    "repo": "",
+    "featured": false
   }
 ]
