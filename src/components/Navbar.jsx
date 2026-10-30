@@ -30,7 +30,7 @@ export default function Navbar({ name }) {
     >
       <nav className="container-page flex h-16 items-center justify-between">
         <a href="#top" className="flex items-center gap-2 font-semibold tracking-tight">
-          <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-500 text-sm font-bold text-white">M</span>
+          <span className="grid h-8 w-8 place-items-center rounded-lg bg-brand-500 text-sm font-bold text-white">{name ? [...name][0] : 'M'}</span>
           <span className="hidden sm:inline">{name}</span>
         </a>
 
